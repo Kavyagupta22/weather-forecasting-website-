@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Weather Website</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+
+        <div class="logo">
+            🌦️ Smart Weather
+        </div>
+
+        <button id="themeBtn" class="theme-btn">
+            🌙
+        </button>
+
+    </header>
+
+
+    <!-- Main Container -->
+    <main class="container">
+
+        <!-- Search Section -->
+        <section class="search-section">
+
+            <h1>Weather Forecast</h1>
+
+            <p>
+                Search for any city to check the current weather
+            </p>
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="cityInput"
+                    placeholder="Enter city name..."
+                >
+
+                <button id="searchBtn">
+                    Search
+                </button>
+
+            </div>
+
+            <p id="errorMessage" class="error"></p>
+
+        </section>
+
+
+        <!-- Loading -->
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>Loading weather data...</p>
+        </div>
+
+
+        <!-- Weather Information -->
+        <section id="weatherSection" class="weather-section">
+
+            <!-- Current Weather -->
+            <div class="current-weather">
+
+                <div class="location">
+
+                    <h2 id="cityName">
+                        New Delhi
+                    </h2>
+
+                    <p id="date">
+                        Monday, 4 October 2026
+                    </p>
+
+                </div>
+
+
+                <div class="main-weather">
+
+                    <div class="weather-icon">
+
+                        <img
+                            id="weatherIcon"
+                            src=""
+                            alt="Weather Icon"
+                        >
+
+                    </div>
+
+                    <div>
+
+                        <h1 id="temperature">
+                            --°C
+                        </h1>
+
+                        <p id="description">
+                            --
+                        </p>
+
+                        <p>
+                            Feels like
+                            <span id="feelsLike">--</span>°C
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Weather Details -->
+
+            <div class="details-grid">
+
+                <div class="weather-card">
+
+                    <div class="card-icon">
+                        💧
+                    </div>
+
+                    <h3>Humidity</h3>
+
+                    <p>
+                        <span id="humidity">--</span>%
+                    </p>
+
+                </div>
+
+
+                <div class="weather-card">
+
+                    <div class="card-icon">
+                        💨
+                    </div>
+
+                    <h3>Wind Speed</h3>
+
+                    <p>
+                        <span id="windSpeed">--</span> km/h
+                    </p>
+
+                </div>
+
+
+                <div class="weather-card">
+
+                    <div class="card-icon">
+                        🌡️
+                    </div>
+
+                    <h3>Pressure</h3>
+
+                    <p>
+                        <span id="pressure">--</span> hPa
+                    </p>
+
+                </div>
+
+
+                <div class="weather-card">
+
+                    <div class="card-icon">
+                        👁️
+                    </div>
+
+                    <h3>Visibility</h3>
+
+                    <p>
+                        <span id="visibility">--</span> km
+                    </p>
+
+                </div>
+
+
+                <div class="weather-card">
+
+                    <div class="card-icon">
+                        🌅
+                    </div>
+
+                    <h3>Sunrise</h3>
+
+                    <p id="sunrise">
+                        --
+                    </p>
+
+                </div>
+
+
+                <div class="weather-card">
+
+                    <div class="card-icon">
+                        🌇
+                    </div>
+
+                    <h3>Sunset</h3>
+
+                    <p id="sunset">
+                        --
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Forecast -->
+
+            <section class="forecast-section">
+
+                <h2>5-Day Forecast</h2>
+
+                <div id="forecastContainer" class="forecast-container">
+
+                    <!-- Forecast cards generated using JavaScript -->
+
+                </div>
+
+            </section>
+
+
+            <!-- Recent Searches -->
+
+            <section class="recent-section">
+
+                <h2>Recent Searches</h2>
+
+                <div id="recentCities" class="recent-cities">
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Smart Weather Website
+        </p>
+
+        <p>
+            MCA Web Programming Mini Project
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
